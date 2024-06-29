@@ -1,0 +1,162 @@
+/* Reset some default styles */
+body, h1, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(images/h2.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Banner styles */
+.banner {
+    background: url('your-banner-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+/* Heading styles */
+.heading {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    text-align: center; /* Center align the heading */
+    margin-top: 20px; /* Add top margin to push it down from the top */
+}
+
+/* Navbar styles */
+.navbar {
+    position: absolute;
+    top: 20px; /* Position navbar 20px from the top */
+    right: 20px; /* Position navbar 20px from the right */
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    float: right;
+}
+
+.navbar ul {
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    text-align: right; /* Align list items to the right */
+}
+
+.navbar ul li {
+    display: inline-block; /* Display list items inline */
+    margin-left: 10px; /* Adjust spacing between list items */
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/*Traditons*/
+main {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto; 
+  }
+.tradition{
+    color: white;
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/*Carousal*/
+
+
+/* Swiper styles */
+.swiper-container {
+    width: 100%;
+    height: 300px; /* Set a fixed height for the carousel */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Ensure slides take up full height of container */
+}
+
+.swiper-slide img {
+    display: block;
+    width: auto;
+    height: 100%; /* Ensure images take up full height of slides */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.swiper-pagination {
+    position: absolute;
+    text-align: center;
+    transition: .3s opacity;
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+    bottom: 10px; /* Position pagination at the bottom */
+    width: 80%; /* Width of pagination */
+    left: 50%; /* Center the pagination */
+    transform: translateX(-50%); /* Center the pagination */
+}
+/*footer*/
+.footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px 0;
+}
+.footer .social-icons {
+    font-size: 24px;
+}
+.footer .suggestion-box {
+    margin-top: 10px;
+}
+.footer .suggestion-box textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    resize: none;
+}
+button{
+    background-color: aqua;
+}
+
+.tradition {
+    padding: 20px;
+    text-align: center;
+}
+
+.tradition h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.tradition p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.tradition button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}

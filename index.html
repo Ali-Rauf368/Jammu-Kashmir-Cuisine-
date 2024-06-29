@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banner with Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+ 
+</head>
+<body>
+    <header class="banner">
+        <h1 class="heading">Jammu and Kashmir Cuisine</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="tradition">
+            <h1>Welcome to Traditional Jammu and Kashmir Cuisine</h1>
+            <p>
+                Our cuisine is a fascinating amalgamation of flavors, techniques, and traditions. Its distinctive use of spices, slow-cooking methods, and variety of dishes ranging from hearty meat preparations to delicate vegetarian fare make it a unique and treasured culinary tradition.
+                <br><a href="#"><button >Book Now For a Wonderful Experience</button></a>
+            </p>
+        </section>
+        
+        <section class="carousel">
+            <div class="swiper-container progress-slide-carousel">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="images/cuisine-jk.jpg" alt="Cuisine">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/cuisine-jk1.jpg" alt="Cuisine">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/cuisine-jk2.jpg" alt="Cuisine">
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4>Send us your suggestions</h4>
+                    <div class="suggestion-box">
+                        <textarea class="form-control" placeholder="Type your suggestions here..."></textarea>
+                        <br><a href="#"><button >Send </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+<!-- Bootstrap JS and dependencies (jQuery, Popper.js) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".progress-slide-carousel", {
+            loop: true,
+            slidesPerView: 1,
+            autoplay: {
+                delay: 5000,  // Set delay to 5000ms (5 seconds) for a slower transition
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "progressbar",
+            },
+        });
+    </script>
+</body>
+</html>
