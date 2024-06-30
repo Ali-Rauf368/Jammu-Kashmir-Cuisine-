@@ -1,4 +1,4 @@
-# Jammu & Kashmir-Cuisine
+# Jammu & Kashmir Cuisine
 - This is a basic website about Jammu and Kashmr restaurant and we used  HTML CSS and bootstrap along with with animated images .
 - First part is Main Heading .
 - Second part is a navbarr with different options
